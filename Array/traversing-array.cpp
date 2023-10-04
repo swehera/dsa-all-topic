@@ -24,6 +24,18 @@ int main() {
     cout << arr[i] << " for Index: "<< i << endl;
   }
 
+// for each loop
+  for(int ele : arr) {
+    cout << ele << endl;
+  }
+
+// while loop
+  int idx = 0;
+  int size = sizeof(arr) / sizeof(arr[0]);
+  while(idx < size) {
+    cout << arr[idx]<< " for index: "<< idx << endl;
+    idx++;
+  }
   
   return 0;
 }
